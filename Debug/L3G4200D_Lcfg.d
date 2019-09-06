@@ -10,6 +10,7 @@ L3G4200D_Lcfg.obj: ../Basic_Types.h
 L3G4200D_Lcfg.obj: ../Basic_Types.h
 L3G4200D_Lcfg.obj: ../SPI.h
 L3G4200D_Lcfg.obj: ../Basic_Types.h
+L3G4200D_Lcfg.obj: ../L3G4200D_Cfg.h
 L3G4200D_Lcfg.obj: ../Basic_Types.h
 L3G4200D_Lcfg.obj: ../L3G4200D.h
 
@@ -23,5 +24,6 @@ L3G4200D_Lcfg.obj: ../L3G4200D.h
 ../Basic_Types.h: 
 ../SPI.h: 
 ../Basic_Types.h: 
+../L3G4200D_Cfg.h: 
 ../Basic_Types.h: 
 ../L3G4200D.h: 
