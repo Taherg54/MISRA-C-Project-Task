@@ -15,6 +15,10 @@ void UART_TxBuffer(const u8* Buffer,u16 BufferLength);
 void UART_StartReception(u8* Buffer,u16 BufferLength,tCbkFn RxcCbkFnPtr);
 u16 UART_GetNumOfRxbytes(void);
 void UART_StopRception(void);
+void Cyclic30ms(void);
+void _delay_ms(u16 delay);
+void sei(void);
+u32 main(void);
 
 
 
