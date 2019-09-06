@@ -23,6 +23,6 @@ void BLMGR_BluetoothInit(void);
 void BLMGR_BluetoothStateMachine(void);
 void BLMGR_StartDevice(void);
 void BLMGR_SetReceiver(u8 Receiver);
-void BLMGR_SetDeviceName(u8 DeviceName[],u8 DeviceNameLength);
+void BLMGR_SetDeviceName(const u8 DeviceName[],u8 DeviceNameLength);
 void BLMGR_SetBattLevel(u8 BattLevel);
 #endif /* BLMGR_H_ */
