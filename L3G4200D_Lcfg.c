@@ -16,27 +16,26 @@ const L3G4200D_CfgType L3G4200D_ConfigParam = {
                                                },
 
                                                {
-                                               u8X_AXIS_ACTIVE,
-											   u8Y_AXIS_ACTIVE,
-											   u8Z_AXIS_ACTIVE
+                                                u8X_AXIS_ACTIVE,
+                                                u8Y_AXIS_ACTIVE,
+                                                u8Z_AXIS_ACTIVE
                                                },
 
-											   {
-											   u8NO_FILTERS,
-											   u8NO_FILTERS
-											   },
+                                               {
+                                                u8NO_FILTERS,
+                                                u8NO_FILTERS
+                                               },
 
-											   {
-											   0X2CA4u,
-											   0x2CA4u,
-											   0x2CA4u,
-											   0x00u,
-											   u8INT1_X,
-											   u8INT1_Y,
-											   u8INT1_Z,
-											   0u
-											   }
+                                               {
+                                                0X2CA4u,
+                                                0x2CA4u,
+                                                0x2CA4u,
+                                                0x00u,
+                                                u8INT1_X,
+                                                u8INT1_Y,
+                                                u8INT1_Z,
+                                                0u
+                                               }
 
-                                              };
+};
 
-											   
