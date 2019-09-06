@@ -21,6 +21,9 @@
 void DIO_InitPortDirection(u8 PortName,u8 PortDirection,u8 PortMask);
 void DIO_WritePort(u8 PortName,u8 PortData,u8 PortMask);
 u8 DIO_ReadPort(u8 PortName,u8 PortMAsk);
+void DIO_vidWritePortDirection(u8 col_port, u8 col_mask, u8 value);
+void DIO_vidWritePortData(u8 row_port, u8 row_mask, u8 value);
+void DIO_vidReadPortData(u8 col_port, u8 col_mask, u8* value_ptr);
 
 
 
