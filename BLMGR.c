@@ -1011,7 +1011,7 @@ static u8 CheckIdFrame(void)
 /*********************************************************************************/
 static void UpdateValFrame(void)
 {
-    u8 Crc = 0u;
+    u16 Crc = 0u;
     u32 CrcKey = 0u;
     static u8 TempBuffer[MAX_DATA_BUFFER_LENGTH];
     /*Set Tx Frame to default values*/
@@ -1028,7 +1028,7 @@ static void UpdateValFrame(void)
     BLMGR_DataTxBuffer[PARAM_LENGTH_IDX] = 2u;
     #if(COMM_CINFIG == MSTER_COMM)
     /* Start Generating the Key for CRC*/
-    SECR_CrcPolynomialGenerate(&CrcKey,Crc);
+    SECR_CrcPolynomialGenerate(&CrcKey,(u8)Crc);
     BLMGR_CrcKey = CrcKey;
     #endif
     /*Calculate CRC*/
@@ -1039,7 +1039,7 @@ static void UpdateValFrame(void)
     SECR_GnerateCrc(TempBuffer, BLMGR_RxDeviceNameLength+2u, &Crc, BLMGR_CrcKey);
     /*Update Crc*/
     BLMGR_DataTxBuffer[FRAME_VAL_CRC_IDX] = (u8)Crc;
-    BLMGR_DataTxBuffer[FRAME_VAL_CRC_IDX + 1u] = (u8)(Crc >> 7u);
+    BLMGR_DataTxBuffer[FRAME_VAL_CRC_IDX + 1u] = (u8)(Crc >> 8u);
     /*update Default CRC*/
     MemSet(&BLMGR_DataTxBuffer[FRAME_CRC_IDX],TX_CRC_DEFAULT,2u);
     /*update Frame CheckSum*/
